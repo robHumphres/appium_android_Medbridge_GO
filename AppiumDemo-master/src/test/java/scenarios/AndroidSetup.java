@@ -17,7 +17,7 @@ public class AndroidSetup {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "6.0");
         capabilities.setCapability("deviceName", "Nexus");
-        capabilities.setCapability("app", "/Users/robert/Downloads/AppiumDemo-master/apps/medbridgeGo.apk");
+        capabilities.setCapability("app", "/Users/robert/Downloads/AppiumDemo-master/apps/medbridgeGo2.apk");
         capabilities.setCapability("appPackage", "com.medbridgeed.hep.go");
         capabilities.setCapability("appActivity", "com.medbridgeed.hep.go.activities.SplashActivity");
         driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);

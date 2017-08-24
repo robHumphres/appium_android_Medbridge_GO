@@ -3,8 +3,7 @@ package scenarios;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.LoginPage;
-import pages.MedBridgeGOFrontPage;
+import pages.MedBridgeGo;
 
 public class AppiumTest extends AndroidSetup {
 
@@ -20,8 +19,11 @@ public class AppiumTest extends AndroidSetup {
 
     @Test
     public void falseLoginTest() throws InterruptedException {
-        //new LoginPage(driver).invalidLogin();
-        new MedBridgeGOFrontPage(driver).logOn();
+
+        //Log into app with Credentials
+        //new LoginPage(driver);
+
+        new MedBridgeGo(driver).mainExecution();
     }
 
 }
